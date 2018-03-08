@@ -1,0 +1,5 @@
+---
+- name: Install the application package
+  yum:
+    name: "{{ vagrant_package_url }}/{{ vagrant_version }}/vagrant_{{ vagrant_version }}_{{ vagrant_arch }}.rpm"
+    state: present

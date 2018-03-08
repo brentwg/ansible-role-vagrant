@@ -1,0 +1,5 @@
+---
+- name: Install the application package
+  apt:
+    deb: "{{ vagrant_package_url }}/{{ vagrant_version }}/vagrant_{{ vagrant_version }}_{{ vagrant_arch }}.deb"
+    
