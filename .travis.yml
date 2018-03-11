@@ -19,5 +19,8 @@ script:
   # Run tests
   - ${PWD}/tests/test.sh
 
+  # Print application version
+  - docker exec --tty $container_id env TERM=xterm vagrant --version
+
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
